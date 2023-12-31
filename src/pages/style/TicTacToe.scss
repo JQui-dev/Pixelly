@@ -1,0 +1,30 @@
+$p1: #c00;
+$p2: #00c;
+
+.TicTacToe {
+    display: grid;
+    place-items: center;
+    transition: grid-template-columns 200ms;
+    grid-template-columns: 1fr;
+    height: 100dvh;
+
+    .table {
+        display: grid;
+        grid-template-areas: "a a a" "a a a" "a a a";
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+
+        // BUTTON
+    }
+}
+
+.p1 {
+    background: $p1;
+}
+.p2 {
+    background: $p2;
+}
+.showMenu {
+    grid-template-columns: 3fr 2fr;
+}

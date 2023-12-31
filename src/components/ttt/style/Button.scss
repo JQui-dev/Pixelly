@@ -1,0 +1,27 @@
+$btn: 260px/3;
+
+.Button {
+    position: relative;
+    display: grid;
+    place-items: center;
+
+    width: $btn;
+    aspect-ratio: 1;
+
+    border-radius: 5px;
+    background: #fff;
+
+    & svg {
+        font-size: 3rem;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+.clicked {
+    font-size: 1.5rem;
+    &:hover {
+        cursor: default;
+    }
+}
